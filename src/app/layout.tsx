@@ -34,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='fr'>
-      <body className={`${nunito.variable} ${poppins.variable} antialiased`}>
+      <body
+        className={`${nunito.variable} ${poppins.variable} antialiased bg-background`}
+      >
         <Header />
         {children}
         <Footer />
