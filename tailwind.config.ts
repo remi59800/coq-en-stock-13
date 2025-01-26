@@ -14,6 +14,10 @@ export default {
         brown: '#BB977B',
         text: '#101A24',
       },
+      fontFamily: {
+        sans: ['Poppins', 'Arial', 'Helvetica', 'sans-serif'],
+        nunito: ['Nunito', 'Arial', 'Helvetica', 'sans-serif'],
+      },
     },
   },
   plugins: [],
