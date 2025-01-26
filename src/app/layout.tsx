@@ -6,14 +6,14 @@ import Footer from './components/Footer';
 
 const nunito = Nunito({
   variable: '--font-nunito',
-  weight: ['400', '700', '900'], // Regular, Bold, Black
+  weight: ['400', '700', '900'],
   subsets: ['latin'],
   display: 'swap',
 });
 
 const poppins = Poppins({
   variable: '--font-poppins',
-  weight: ['400', '700'], // Regular, Bold
+  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
 });

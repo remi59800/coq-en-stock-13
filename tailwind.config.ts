@@ -12,7 +12,11 @@ export default {
         background: '#FFF8F1',
         green: '#A0C4AE',
         brown: '#BB977B',
-        text: '#101A24',
+        primary: '#101A24',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'Arial', 'Helvetica', 'sans-serif'],
+        nunito: ['Nunito', 'Arial', 'Helvetica', 'sans-serif'],
       },
     },
   },
