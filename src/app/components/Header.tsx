@@ -4,6 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+const links = [
+  { href: '/', label: 'ACCUEIL' },
+  { href: '/histoire', label: 'NOTRE HISTOIRE' },
+  { href: '/menu', label: 'MENU' },
+  { href: '/contact', label: 'CONTACT' },
+];
+
 export default function Header() {
   const pathname = usePathname();
 
@@ -19,38 +26,17 @@ export default function Header() {
       </div>
 
       <nav className='hidden sm:flex justify-center sm:w-1/2 space-x-6'>
-        <Link
-          href='/'
-          className={`font-nunito text-sm whitespace-nowrap ${
-            pathname === '/' ? 'font-black' : ''
-          }`}
-        >
-          ACCUEIL
-        </Link>
-        <Link
-          href='/histoire'
-          className={`font-nunito text-sm whitespace-nowrap ${
-            pathname === '/histoire' ? 'font-black' : ''
-          }`}
-        >
-          NOTRE HISTOIRE
-        </Link>
-        <Link
-          href='/menu'
-          className={`font-nunito text-sm whitespace-nowrap ${
-            pathname === '/menu' ? 'font-black' : ''
-          }`}
-        >
-          MENU
-        </Link>
-        <Link
-          href='/contact'
-          className={`font-nunito text-sm whitespace-nowrap ${
-            pathname === '/contact' ? 'font-black' : ''
-          }`}
-        >
-          CONTACT
-        </Link>
+        {links.map(({ href, label }) => (
+          <Link
+            key={href}
+            href={href}
+            className={`font-nunito text-sm text-primary whitespace-nowrap ${
+              pathname === href ? 'font-black' : ''
+            }`}
+          >
+            {label}
+          </Link>
+        ))}
       </nav>
 
       <div className='hidden sm:flex w-1/4 justify-end space-x-2'>
