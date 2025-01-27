@@ -15,7 +15,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className='h-20 flex items-center px-6 max-w-4xl mx-auto'>
+    <header className='h-20 flex items-center px-8 max-w-4xl mx-auto'>
       <div className='w-full flex justify-center sm:w-1/4 sm:block'>
         <Image
           src='/logo-c-e-s.svg'
