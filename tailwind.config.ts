@@ -18,6 +18,13 @@ export default {
         sans: ['Poppins', 'Arial', 'Helvetica', 'sans-serif'],
         nunito: ['Nunito', 'Arial', 'Helvetica', 'sans-serif'],
       },
+      screens: {
+        sm: '640px',
+        md: '880px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],
