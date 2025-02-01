@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/34ca10d2c4fe18821efa131b5d6d8f35?family=Barlow+Solid');
 
 @tailwind base;
 @tailwind components;
@@ -8,21 +7,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@font-face {
-  font-family: 'Barlow Solid';
-  src: url('https://db.onlinewebfonts.com/t/34ca10d2c4fe18821efa131b5d6d8f35.eot');
-  src: url('https://db.onlinewebfonts.com/t/34ca10d2c4fe18821efa131b5d6d8f35.eot?#iefix')
-      format('embedded-opentype'),
-    url('https://db.onlinewebfonts.com/t/34ca10d2c4fe18821efa131b5d6d8f35.woff2')
-      format('woff2'),
-    url('https://db.onlinewebfonts.com/t/34ca10d2c4fe18821efa131b5d6d8f35.woff')
-      format('woff'),
-    url('https://db.onlinewebfonts.com/t/34ca10d2c4fe18821efa131b5d6d8f35.ttf')
-      format('truetype'),
-    url('https://db.onlinewebfonts.com/t/34ca10d2c4fe18821efa131b5d6d8f35.svg#BarlowSolid')
-      format('svg');
 }
 
 @media (prefers-color-scheme: dark) {

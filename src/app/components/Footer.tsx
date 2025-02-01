@@ -6,7 +6,7 @@ export default function Footer() {
       <div className='w-full max-w-5xl px-8'>
         <div className='py-4 flex justify-center md:justify-start'>
           <Image
-            src='/logo-c-e-s-blanc.svg'
+            src='/logo-coq-blanc.svg'
             alt='Logo Coq en stock'
             width={60}
             height={48}
@@ -25,7 +25,7 @@ export default function Footer() {
             <h2 className='font-black pb-2 text-base'>
               Horaires d&apos;ouverture
             </h2>
-            <div className='flex space-x-8 pb-4'>
+            <div className='flex space-x-8'>
               <div className='flex flex-col'>
                 <p className='text-sm'>Lundi au vendredi</p>
                 <p className='text-sm'>10h - 19h30</p>
@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className='flex items-center flex-col pb-9 md:items-start whitespace-nowrap'>
+          <div className='flex items-center flex-col pb-6 md:items-start whitespace-nowrap'>
             <h2 className='font-black pb-4'>Réseaux sociaux</h2>
             <div className='flex items-center space-x-3'>
               <a

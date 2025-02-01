@@ -18,7 +18,7 @@ export default function Header() {
     <header className='h-20 flex items-center px-8 max-w-5xl mx-auto'>
       <div className='w-full flex justify-center sm:w-1/4 sm:block'>
         <Image
-          src='/logo-c-e-s.svg'
+          src='/logo-coq.svg'
           alt='Logo Coq en stock'
           width={60}
           height={48}
