@@ -50,10 +50,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='grid grid-cols-1 mm:grid-cols-3 gap-8 px-8 py-9 text-primary w-full max-w-5xl mx-auto'>
+      <div className='grid grid-cols-1 mm:grid-cols-3 gap-8 px-8 py-10 text-primary w-full max-w-5xl mx-auto'>
         <div className='flex flex-col items-center w-full'>
           <Image
-            className='py-2 mm:w-auto mm:h-auto w-full h-auto'
+            className='pb-2 mm:w-auto mm:h-auto w-full h-auto'
             src='/photos/accueil-1.svg'
             alt='photo-rotisserie'
             width={300}
@@ -82,7 +82,7 @@ export default function Home() {
 
         <div className='flex flex-col items-center w-full'>
           <Image
-            className='py-2 mm:w-auto mm:h-auto w-full h-auto'
+            className='pb-2 mm:w-auto mm:h-auto w-full h-auto'
             src='/photos/accueil-2.svg'
             alt='photo-traiteur'
             width={300}
@@ -100,7 +100,7 @@ export default function Home() {
 
         <div className='flex flex-col items-center w-full'>
           <Image
-            className='py-2 mm:w-auto mm:h-auto w-full h-auto'
+            className='pb-2 mm:w-auto mm:h-auto w-full h-auto'
             src='/photos/accueil-3.svg'
             alt='photo-evenements'
             width={300}
@@ -128,16 +128,15 @@ export default function Home() {
         />
 
         <div className='w-full max-w-5xl mx-auto flex flex-col mm:flex-row items-center lg:px-8'>
-          <div className='w-full mx-auto flex flex-col mm:flex-row items-center'>
+          <div className='w-full mx-auto grid grid-cols-1 mm:grid-cols-2 items-center'>
             <Image
-              className='w-full h-auto mm:w-1/2 mm:h-full sm:object-cover'
+              className='w-full h-auto object-cover'
               src='/photos/accueil-4.svg'
               alt='photo-boutique'
               width={600}
               height={400}
             />
-
-            <div className='flex flex-col items-center px-8 pt-6 pb-9 text-primary'>
+            <div className='flex flex-col items-center px-8 pt-7 pb-9 mm:pt-0 mm:pb-0 text-primary'>
               <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
                 LA BOUTIQUE
               </h2>
@@ -160,7 +159,7 @@ export default function Home() {
           <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
             SUIVEZ-NOUS @COQENSTOCK_MARSEILLE
           </h2>
-          <div className='grid grid-cols-2 sm:grid-cols-3 gap-8 py-2 px-2'>
+          <div className='grid grid-cols-2 sm:grid-cols-3 gap-x-8 py-2 px-2'>
             <a
               href='https://www.instagram.com/coqenstock_marseille/'
               aria-label='Instagram'
