@@ -15,33 +15,37 @@ export default function Footer() {
 
         <div className='flex flex-col items-center w-full md:flex-row md:justify-between md:items-start md:space-x-10'>
           <div className='flex items-center flex-col pb-4 md:items-start whitespace-nowrap'>
-            <h2 className='font-black pb-2 text-base'>Contact</h2>
-            <p className='text-sm'>95 rue de la République - 13002 Marseille</p>
-            <p className='text-sm'>04 91 91 18 40</p>
-            <p className='text-sm'>coqenstock13@gmail.com</p>
+            <h2 className='font-black pb-2 text-base tracking-[2px]'>
+              Contact
+            </h2>
+            <p className='text-sm font-nunito'>
+              95 rue de la République - 13002 Marseille
+            </p>
+            <p className='text-sm font-nunito'>04 91 91 18 40</p>
+            <p className='text-sm font-nunito'>coqenstock13@gmail.com</p>
           </div>
 
           <div className='flex items-center flex-col pb-4 md:items-start whitespace-nowrap'>
-            <h2 className='font-black pb-2 text-base'>
+            <h2 className='font-black pb-2 text-base tracking-[2px]'>
               Horaires d&apos;ouverture
             </h2>
             <div className='flex space-x-8'>
               <div className='flex flex-col'>
-                <p className='text-sm'>Lundi au vendredi</p>
-                <p className='text-sm'>10h - 19h30</p>
+                <p className='text-sm font-nunito'>Lundi au vendredi</p>
+                <p className='text-sm font-nunito'>10h - 19h30</p>
               </div>
               <div className='flex flex-col'>
-                <p className='text-sm'>Samedi</p>
-                <p className='text-sm'>10h - 19h</p>
+                <p className='text-sm font-nunito'>Samedi</p>
+                <p className='text-sm font-nunito'>10h - 19h</p>
               </div>
               <div className='flex flex-col'>
-                <p className='text-sm'>Dimanche</p>
-                <p className='text-sm'>Fermé</p>
+                <p className='text-sm font-nunito'>Dimanche</p>
+                <p className='text-sm font-nunito'>Fermé</p>
               </div>
             </div>
           </div>
           <div className='flex items-center flex-col pb-6 md:items-start whitespace-nowrap'>
-            <h2 className='font-black pb-4'>Réseaux sociaux</h2>
+            <h2 className='font-black pb-4 tracking-[2px]'>Réseaux sociaux</h2>
             <div className='flex items-center space-x-3'>
               <a
                 href='https://www.facebook.com/profile.php?id=100090150523696'
@@ -72,7 +76,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className='text-xs text-center'>
+        <p className='text-xs text-center font-nunito'>
           © 2025 - Rémi Ménart - Développeur web
         </p>
       </div>
