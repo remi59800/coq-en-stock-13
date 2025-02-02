@@ -15,7 +15,7 @@ export default {
         primary: '#101A24',
       },
       fontFamily: {
-        sans: ['Poppins', 'Arial', 'Helvetica', 'sans-serif'],
+        poppins: ['Poppins', 'Arial', 'Helvetica', 'sans-serif'],
         nunito: ['Nunito', 'Arial', 'Helvetica', 'sans-serif'],
       },
       screens: {
