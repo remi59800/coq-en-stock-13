@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#FFF8F1',
+        background: '#FFF1E2',
         green: '#A0C4AE',
         brown: '#BB977B',
         primary: '#101A24',
@@ -20,6 +20,7 @@ export default {
       },
       screens: {
         sm: '640px',
+        mm: '690px',
         md: '880px',
         lg: '1024px',
         xl: '1280px',

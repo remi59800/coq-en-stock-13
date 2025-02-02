@@ -68,7 +68,7 @@ export default function Header() {
         </a>
       </div>
 
-      <button className='ml-auto sm:hidden'>
+      <button className='absolute right-8 sm:hidden'>
         <Image
           src='/icons/icon-burger-menu.svg'
           alt='Icone Burger Menu'
