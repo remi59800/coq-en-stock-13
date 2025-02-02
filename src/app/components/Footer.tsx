@@ -25,7 +25,7 @@ export default function Footer() {
             <p className='text-sm font-nunito'>coqenstock13@gmail.com</p>
           </div>
 
-          <div className='flex items-center flex-col pb-4 md:items-start whitespace-nowrap'>
+          <div className='flex items-center flex-col pb-6 md:pb-4 md:items-start whitespace-nowrap'>
             <h2 className='font-black pb-2 text-base tracking-[2px]'>
               Horaires d&apos;ouverture
             </h2>
@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className='flex items-center flex-col pb-6 md:items-start whitespace-nowrap'>
+          <div className='hidden md:block md:flex md:items-center md:flex-col md:pb-6 md:items-start md:whitespace-nowrap'>
             <h2 className='font-black pb-4 tracking-[2px]'>Réseaux sociaux</h2>
             <div className='flex items-center space-x-3'>
               <a
