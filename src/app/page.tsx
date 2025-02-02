@@ -11,6 +11,7 @@ export default function Home() {
           alt='coq-background-right'
           width={170}
           height={100}
+          priority
         />
         <Image
           className='absolute left-[0] opacity-10 h-[80%] w-auto hidden sm:block'
@@ -18,6 +19,7 @@ export default function Home() {
           alt='coq-background-left'
           width={170}
           height={100}
+          priority
         />
         <div className='flex flex-col items-center px-8 text-primary max-w-5xl mx-auto relative'>
           <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
@@ -35,14 +37,15 @@ export default function Home() {
 
           <Link
             href={'/menu'}
-            className='mt-6 font-nunito text-sm border border-primary px-4 py-2'
+            className='mt-6 font-nunito text-sm border border-primary px-4 py-1'
           >
             <div className='flex flex-row items-center'>
               <Image
                 src='/icons/icon-chicken.svg'
                 alt='icone-poulet'
-                width={25}
-                height={25}
+                width={30}
+                height={30}
+                priority
               />
               <p className='pl-2'>DÉCOUVRIR NOTRE CARTE</p>
             </div>
@@ -58,6 +61,7 @@ export default function Home() {
             alt='photo-rotisserie'
             width={300}
             height={150}
+            priority
           />
           <div className='flex flex-row items-center'>
             <h2 className='text-center py-4 font-black text-lg tracking-[3px] pr-2'>
@@ -69,6 +73,7 @@ export default function Home() {
               alt='photo-rotisserie'
               width={50}
               height={15}
+              priority
             />
           </div>
           <p className='text-center text-sm font-nunito'>
@@ -87,6 +92,7 @@ export default function Home() {
             alt='photo-traiteur'
             width={300}
             height={150}
+            priority
           />
           <h2 className='text-center py-4 font-black text-lg tracking-[3px]'>
             TRAITEUR
@@ -105,6 +111,7 @@ export default function Home() {
             alt='photo-evenements'
             width={300}
             height={150}
+            priority
           />
           <h2 className='text-center py-4 font-black text-lg tracking-[3px]'>
             ÉVÉNEMENTS
@@ -118,16 +125,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-green w-full relative'>
-        <Image
-          className='absolute top-0 right-0 opacity-20 hidden mm:block  md:w-[250px]'
-          src='/olivier.png'
-          alt='olivier-background'
-          width={250}
-          height={300}
-        />
-
-        <div className='w-full max-w-5xl mx-auto flex flex-col mm:flex-row items-center lg:px-8'>
+      <div className='bg-green w-full'>
+        <div className='w-full max-w-5xl mx-auto transition-all duration-180 ease-in-out flex flex-col mm:flex-row items-center lg:pl-8'>
           <div className='w-full mx-auto grid grid-cols-1 mm:grid-cols-2 items-center'>
             <Image
               className='w-full h-auto object-cover'
