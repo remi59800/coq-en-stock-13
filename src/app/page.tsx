@@ -21,7 +21,7 @@ export default function Home() {
           height={100}
           priority
         />
-        <div className='flex flex-col items-center px-8 text-primary max-w-5xl mx-auto relative'>
+        <div className='flex flex-col items-center px-8 text-primary max-w-3xl mx-auto relative'>
           <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
             L’AMOUR DU POULET ET DE LA CUISINE
           </h2>
@@ -42,7 +42,7 @@ export default function Home() {
             <div className='flex flex-row items-center'>
               <Image
                 src='/icons/icon-chicken.svg'
-                alt='icone-poulet'
+                alt='icon-poulet'
                 width={30}
                 height={30}
                 priority
@@ -56,8 +56,8 @@ export default function Home() {
       <div className='grid grid-cols-1 mm:grid-cols-3 gap-8 px-8 py-10 text-primary w-full max-w-5xl mx-auto'>
         <div className='flex flex-col items-center w-full'>
           <Image
-            className='pb-2 mm:w-auto mm:h-auto w-full h-auto'
-            src='/photos/accueil-1.svg'
+            className='pb-2 h-[300px] mm:h-[200px] object-cover w-full'
+            src='/photos/accueil-1.jpg'
             alt='photo-rotisserie'
             width={300}
             height={150}
@@ -70,7 +70,7 @@ export default function Home() {
             <Image
               className='py-2 mm:w-auto mm:h-auto w-full h-auto'
               src='/icons/Label-rouge.svg'
-              alt='photo-rotisserie'
+              alt='logo label rouge'
               width={50}
               height={15}
               priority
@@ -87,8 +87,8 @@ export default function Home() {
 
         <div className='flex flex-col items-center w-full'>
           <Image
-            className='pb-2 mm:w-auto mm:h-auto w-full h-auto'
-            src='/photos/accueil-2.svg'
+            className='pb-2 h-[300px] mm:h-[200px] object-cover object-top w-full'
+            src='/photos/accueil-2.JPG'
             alt='photo-traiteur'
             width={300}
             height={150}
@@ -106,8 +106,8 @@ export default function Home() {
 
         <div className='flex flex-col items-center w-full'>
           <Image
-            className='pb-2 mm:w-auto mm:h-auto w-full h-auto'
-            src='/photos/accueil-3.svg'
+            className='pb-2 h-[300px] mm:h-[200px] object-cover w-full'
+            src='/photos/accueil-3.jpeg'
             alt='photo-evenements'
             width={300}
             height={150}
@@ -130,7 +130,7 @@ export default function Home() {
           <div className='w-full mx-auto grid grid-cols-1 mm:grid-cols-2 items-center'>
             <Image
               className='w-full h-auto object-cover'
-              src='/photos/accueil-4.svg'
+              src='/photos/accueil-4.JPG'
               alt='photo-boutique'
               width={600}
               height={400}
@@ -153,21 +153,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='py-9'>
+      <div className='py-9 max-w-4xl'>
         <div className='flex flex-col items-center px-8 text-primary'>
-          <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
-            SUIVEZ-NOUS @COQENSTOCK_MARSEILLE
-          </h2>
-          <div className='grid grid-cols-2 sm:grid-cols-3 gap-x-8 py-2 px-2'>
+          <a
+            href='https://www.instagram.com/coqenstock_marseille/'
+            aria-label='Instagram'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='flex justify-center'
+          >
+            <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
+              SUIVEZ-NOUS @COQENSTOCK_MARSEILLE
+            </h2>
+          </a>
+          <div className='grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 py-2 px-2 place-items-center'>
             <a
               href='https://www.instagram.com/coqenstock_marseille/'
               aria-label='Instagram'
               target='_blank'
               rel='noopener noreferrer'
+              className='flex justify-center'
             >
               <Image
-                src='/photos/accueil-insta-1.svg'
-                alt='icone-poulet'
+                className='w-full h-auto object-cover aspect-square'
+                src='/photos/accueil-insta-1.JPG'
+                alt='photo-instagram-1'
                 width={250}
                 height={250}
               />
@@ -177,10 +187,12 @@ export default function Home() {
               aria-label='Instagram'
               target='_blank'
               rel='noopener noreferrer'
+              className='flex justify-center'
             >
               <Image
-                src='/photos/accueil-insta-2.svg'
-                alt='icone-poulet'
+                className='w-full h-auto object-cover aspect-square'
+                src='/photos/accueil-insta-2.jpg'
+                alt='photo-instagram-2'
                 width={250}
                 height={250}
               />
@@ -190,11 +202,12 @@ export default function Home() {
               aria-label='Instagram'
               target='_blank'
               rel='noopener noreferrer'
+              className='hidden sm:flex justify-center'
             >
               <Image
-                className='hidden sm:block'
-                src='/photos/accueil-insta-3.svg'
-                alt='icone-poulet'
+                className='w-full h-auto object-cover aspect-square'
+                src='/photos/accueil-insta-3.JPG'
+                alt='photo-instagram-3'
                 width={250}
                 height={250}
               />
