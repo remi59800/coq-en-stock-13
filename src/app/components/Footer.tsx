@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
         <p className='text-xs text-center font-nunito'>
-          © 2025 - Rémi Ménart - Développeur web
+          © 2025 - Rémi Ménart - Creative developer - remimenart@gmail.com
         </p>
       </div>
     </footer>
