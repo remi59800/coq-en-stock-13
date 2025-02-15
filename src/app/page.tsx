@@ -37,17 +37,17 @@ export default function Home() {
 
           <Link
             href={'/menu'}
-            className='mt-6 font-nunito text-sm border border-primary px-4 py-1'
+            className='mt-6 font-nunito text-sm border border-primary px-4 py-2'
           >
             <div className='flex flex-row items-center'>
               <Image
-                src='/icons/icon-chicken.svg'
+                src='/icons/chicken-CES.svg'
                 alt='icon-poulet'
-                width={30}
-                height={30}
+                width={15}
+                height={15}
                 priority
               />
-              <p className='pl-2'>DÉCOUVRIR NOTRE CARTE</p>
+              <p className='pl-2.5'>DÉCOUVRIR NOTRE CARTE</p>
             </div>
           </Link>
         </div>
@@ -68,8 +68,8 @@ export default function Home() {
               RÔTISSERIE
             </h2>
             <Image
-              className='py-2 mm:w-auto mm:h-auto w-full h-auto'
-              src='/icons/Label-rouge.svg'
+              className='py-2 w-[57px] h-[57px]'
+              src='/icons/Logo-label-rouge.svg'
               alt='logo label rouge'
               width={50}
               height={15}

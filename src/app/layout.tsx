@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Chez Coq en Stock, (re)découvrez l’amour du poulet et d'une cuisine gourmande avec des rôtisseries savoureuses et des plats traiteurs qui éveilleront vos papilles.",
   icons: {
-    icon: '/icons/icon-chicken.svg',
+    icon: '/icons/chicken-CES.svg',
   },
 };
 
