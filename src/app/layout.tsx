@@ -19,9 +19,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Coq en stock',
+  title: 'Coq en Stock - Rôtisserie & Traiteur à Marseille',
   description:
-    "Chez Coq en Stock, (re)découvrez l’amour du poulet et d'une cuisine gourmande avec des rôtisseries savoureuses et des plats traiteurs qui éveilleront vos papilles.",
+    'Coq en Stock, rôtisserie & traiteur à Marseille. Poulet Label Rouge, plats gourmands et épicerie fine. Commandez dès maintenant !',
   icons: {
     icon: '/icons/chicken-CES.svg',
   },
