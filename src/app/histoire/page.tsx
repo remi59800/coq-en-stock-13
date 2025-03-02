@@ -94,7 +94,7 @@ export default function Contact() {
               height={400}
               loading='lazy'
             />
-            <div className='flex max-w-3xl flex-col items-center md:items-start px-8 md:px-0 pt-9 text-primary'>
+            <div className='flex flex-col items-center md:items-start px-8 md:px-0 pt-9 text-primary'>
               <h2 className='text-center md:text-left pb-4 font-black text-lg tracking-[3px]'>
                 DEUX NORDISTES À MARSEILLE
               </h2>
