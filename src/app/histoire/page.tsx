@@ -84,12 +84,12 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className='w-full md:max-w-3xl mx-auto flex flex-col items-center '>
+        <div className='w-full md:max-w-5xl md:px-8 mx-auto flex flex-col items-center '>
           <div className='w-full mx-auto grid grid-cols-1 items-center'>
             <Image
-              className='w-full h-auto object-cover mm:max-h-[300px]'
+              className='w-full h-auto object-cover object-center mm:max-h-[400px]'
               src='/photos/histoire-marseille.jpg'
-              alt='Vue de la boutique Coq en Stock à Marseille'
+              alt='Vue de Marseille'
               width={600}
               height={400}
               loading='lazy'
