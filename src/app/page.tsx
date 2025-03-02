@@ -6,14 +6,6 @@ export default function Home() {
     <main className='flex flex-col items-center mx-auto w-full overflow-hidden'>
       <div className='relative w-full bg-green py-9 flex items-center'>
         <Image
-          className='absolute right-[0] opacity-10 h-[80%] w-auto'
-          src='/coq-bg-right.png'
-          alt='coq-background-right'
-          width={170}
-          height={100}
-          priority
-        />
-        <Image
           className='absolute left-[0] opacity-10 h-[80%] w-auto hidden sm:block'
           src='/coq-bg-left.png'
           alt='coq-background-left'
@@ -21,10 +13,18 @@ export default function Home() {
           height={100}
           priority
         />
+        <Image
+          className='absolute right-[0] opacity-10 h-[80%] max-h-56 w-auto'
+          src='/coq-bg-right.png'
+          alt='coq-background-right'
+          width={170}
+          height={100}
+          priority
+        />
         <div className='flex flex-col items-center px-8 text-primary max-w-3xl mx-auto relative'>
-          <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
+          <h1 className='text-center pb-4 font-black text-lg tracking-[3px]'>
             L’AMOUR DU POULET ET DE LA CUISINE
-          </h2>
+          </h1>
           <p className='text-center text-sm font-nunito'>
             Vous aimez titiller vos papilles avec de bons produits locaux ? Chez
             Coq en Stock, vous trouverez tout ce dont vous avez besoin pour vous
