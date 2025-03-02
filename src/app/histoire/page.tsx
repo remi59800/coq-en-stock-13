@@ -92,6 +92,7 @@ export default function Contact() {
               alt='Vue de la boutique Coq en Stock à Marseille'
               width={600}
               height={400}
+              loading='lazy'
             />
             <div className='flex max-w-3xl flex-col items-center md:items-start px-8 md:px-0 pt-9 text-primary'>
               <h2 className='text-center md:text-left pb-4 font-black text-lg tracking-[3px]'>
