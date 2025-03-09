@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Contact() {
   return (
-    <div>
+    <main>
       <div className='relative w-full bg-green flex md:max-h-[450px]'>
         <div className='absolute w-full h-full flex items-center justify-between'>
           <Image
@@ -124,6 +124,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
