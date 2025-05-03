@@ -3,6 +3,7 @@ import './globals.css';
 import Header from './components/Header';
 import { Nunito, Poppins } from 'next/font/google';
 import Footer from './components/Footer';
+import TransitionLayout from './components/TransitionLayout';
 
 const nunito = Nunito({
   variable: '--font-nunito',
@@ -38,7 +39,7 @@ export default function RootLayout({
         className={`${nunito.variable} ${poppins.variable} antialiased bg-background`}
       >
         <Header />
-        {children}
+        <TransitionLayout>{children}</TransitionLayout>
         <Footer />
       </body>
     </html>
