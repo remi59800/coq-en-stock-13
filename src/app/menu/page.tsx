@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Menu() {
   return (
     <div className='relative w-full flex'>
-      <div className='absolute w-full h-full flex items-center justify-between'>
+      <div className='absolute w-full h-full flex items-center justify-between pointer-events-none'>
         <Image
           className='absolute right-[0] opacity-10 h-[80%] max-h-56 w-auto hidden md:block'
           src='/coq-bg-right.png'
@@ -117,6 +117,7 @@ export default function Menu() {
           besoins. Contactez-nous pour élaborer ensemble une offre personnalisée
           qui répondra à vos exigences.
         </p>
+
         <Link
           href={'/contact'}
           className='mt-6 font-nunito text-sm border border-primary px-4 py-2 mb-10'
