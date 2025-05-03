@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center mx-auto w-full overflow-hidden'>
+    <div className='flex flex-col items-center mx-auto w-full overflow-hidden'>
       <div className='relative w-full bg-green py-9 flex items-center'>
         <Image
           className='absolute left-[0] opacity-10 h-[80%] w-auto hidden sm:block'
@@ -215,6 +215,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

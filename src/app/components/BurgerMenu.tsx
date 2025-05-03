@@ -38,9 +38,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ open, setOpen }) => {
     <div
       style={{ height: '100svh' }}
       className={`flex flex-col items-center justify-between bg-green transition-all duration-500 ease-in-out text-center px-8 py-14 fixed top-0 right-0 ${
-        open
-          ? 'translate-x-0 opacity-100 scale-100'
-          : 'translate-x-full opacity-0 scale-100'
+        open ? 'translate-x-0' : 'translate-x-full'
       } w-full sm:w-2/3 z-[10]`}
     >
       <Image

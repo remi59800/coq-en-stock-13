@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-export default function Contact() {
+export default function Histoire() {
   return (
-    <main>
+    <>
       <div className='relative w-full bg-green flex md:max-h-[450px]'>
         <div className='absolute w-full h-full flex items-center justify-between'>
           <Image
@@ -63,7 +63,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
       <div className='w-full'>
         <div className='hidden md:flex md:justify-center md:gap-8 max-w-2xl mx-auto py-8 mt-9'>
           <div className='flex flex-col items-center w-full max-w-[320px]'>
@@ -124,6 +123,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }
