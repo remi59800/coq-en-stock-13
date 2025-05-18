@@ -21,8 +21,15 @@ export default function Footer() {
             <p className='text-sm font-nunito'>
               95 rue de la République - 13002 Marseille
             </p>
-            <p className='text-sm font-nunito'>04 91 91 18 40</p>
-            <p className='text-sm font-nunito'>coqenstock13@gmail.com</p>
+            <a href='tel:0491911840' className='text-sm font-nunito'>
+              04 91 91 18 40
+            </a>
+            <a
+              href='mailto:coqenstock13@gmail.com'
+              className='text-sm font-nunito'
+            >
+              coqenstock13@gmail.com
+            </a>
           </div>
 
           <div className='flex items-center flex-col pb-6 md:pb-4 md:items-start whitespace-nowrap'>

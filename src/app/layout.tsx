@@ -4,6 +4,8 @@ import Header from './components/Header';
 import { Nunito, Poppins } from 'next/font/google';
 import Footer from './components/Footer';
 import TransitionLayout from './components/TransitionLayout';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const nunito = Nunito({
   variable: '--font-nunito',
@@ -41,6 +43,7 @@ export default function RootLayout({
         <Header />
         <TransitionLayout>{children}</TransitionLayout>
         <Footer />
+        <ToastContainer position='top-right' />
       </body>
     </html>
   );
