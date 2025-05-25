@@ -144,7 +144,7 @@ export default function FormSendEmail() {
             onChange={handleChange}
             maxLength={100}
             placeholder='Entrez votre numéro'
-            className={getInputClass('email')}
+            className={getInputClass('telephone')}
           />
         </div>
 
