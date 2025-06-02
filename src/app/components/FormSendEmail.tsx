@@ -75,8 +75,21 @@ export default function FormSendEmail() {
       return;
     }
 
-    console.log('Token reCAPTCHA :', token);
-    console.log('Formulaire prêt à être envoyé :', formData);
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        ...formData,
+        recaptchaToken: token,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      toast.error(result.error || 'Erreur lors de l’envoi du formulaire.');
+      return;
+    }
 
     toast.success('Votre message a bien été envoyé ✅');
 
@@ -127,7 +140,7 @@ export default function FormSendEmail() {
             value={formData.email}
             onChange={handleChange}
             maxLength={100}
-            placeholder='nomprenom@gmail.com'
+            placeholder='Entrez votre e-mail'
             className={getInputClass('email')}
           />
         </div>
@@ -159,7 +172,7 @@ export default function FormSendEmail() {
             onChange={handleChange}
             rows={5}
             maxLength={1000}
-            placeholder='Écrivez votre message ici'
+            placeholder='Écrivez votre message ici (1000 car. max)'
             className={getInputClass('message')}
           />
         </div>
