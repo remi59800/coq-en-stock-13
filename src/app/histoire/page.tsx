@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Histoire() {
   return (
     <>
-      <div className='relative w-full bg-green flex md:max-h-[450px]'>
+      <div className='relative w-full bg-green flex md:max-h-[380px]'>
         <div className='absolute w-full h-full flex items-center justify-between'>
           <Image
             className='absolute right-[0] opacity-10 h-[80%] max-h-56 w-auto'
@@ -64,7 +64,7 @@ export default function Histoire() {
         </div>
       </div>
       <div className='w-full'>
-        <div className='hidden md:flex md:justify-center md:gap-8 max-w-2xl mx-auto py-8 mt-9'>
+        <div className='hidden md:flex md:justify-center max-w-2xl mx-auto py-8 mt-10'>
           <div className='flex flex-col items-center w-full max-w-[320px]'>
             <h2 className='font-nunito text-center font-black pb-4'>ALEX</h2>
             <p className='text-center text-sm font-nunito'>
