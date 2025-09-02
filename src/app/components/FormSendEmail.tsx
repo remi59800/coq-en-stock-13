@@ -1,10 +1,10 @@
 'use client';
-
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from 'react-google-recaptcha';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 type FormData = {
   nom: string;
@@ -42,6 +42,12 @@ export default function FormSendEmail() {
     if (!formData.email) newErrors.email = true;
     if (!formData.message) newErrors.message = true;
 
+    // ⚡ Ajout de la limite 1000 caractères
+    if (formData.message && formData.message.length > 1000) {
+      newErrors.message = true;
+      toast.warn('Le message ne peut pas dépasser 1000 caractères.');
+    }
+
     // Champs à pulser
     Object.keys(newErrors).forEach((key) => {
       newPulsing[key as keyof FormData] = true;
@@ -75,25 +81,30 @@ export default function FormSendEmail() {
       return;
     }
 
-    const response = await fetch('/api/send', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        ...formData,
-        recaptchaToken: token,
-      }),
-    });
-
-    const result = await response.json();
-
-    if (!response.ok) {
-      toast.error(result.error || 'Erreur lors de l’envoi du formulaire.');
-      return;
+    try {
+      // Envoi avec EmailJS
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        {
+          nom: formData.nom,
+          email: formData.email,
+          telephone: formData.telephone || 'Non renseigné',
+          message: formData.message,
+        },
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '' }
+      );
+      toast.success('Votre message a bien été envoyé ✅');
+      setFormData({ nom: '', telephone: '', email: '', message: '' });
+    } catch (err) {
+      if (err instanceof EmailJSResponseStatus) {
+        console.error('EMAILJS FAILED...', err);
+        toast.error('Erreur lors de l’envoi du formulaire.');
+      } else {
+        console.error('error', err);
+        toast.error('Erreur lors de l’envoi du formulaire.');
+      }
     }
-
-    toast.success('Votre message a bien été envoyé ✅');
-
-    setFormData({ nom: '', telephone: '', email: '', message: '' });
   };
 
   const inputBase =
