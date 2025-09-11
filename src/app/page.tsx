@@ -32,9 +32,7 @@ export default function Home() {
             allant de la rôtisserie aux plats traiteurs ainsi qu’un espace
             épicerie fine... <br></br>
             <br></br>
-            <strong className='font-bold'>
-              Contactez-nous dès maintenant au 04 91 91 18 40 !
-            </strong>
+            <strong className='font-bold'>On vous attend !</strong>
           </p>
 
           <Link
