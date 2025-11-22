@@ -2,38 +2,11 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import sanitizeHtml from 'sanitize-html';
 
-// ---- RATE LIMIT SIMPLE EN MÉMOIRE ----
-// (À remplacer par Redis / Upstash en prod multi-instances)
-const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
-const RATE_LIMIT_MAX_REQUESTS = 5; // max 5 req / IP / min
-const requests = new Map<string, number[]>();
-
-function isRateLimited(ip: string | undefined): boolean {
-  if (!ip) return false;
-  const now = Date.now();
-  const timestamps = requests.get(ip) || [];
-
-  // On garde uniquement les timestamps dans la fenêtre
-  const recent = timestamps.filter((t) => now - t < RATE_LIMIT_WINDOW);
-  recent.push(now);
-  requests.set(ip, recent);
-
-  return recent.length > RATE_LIMIT_MAX_REQUESTS;
-}
-
 // ---- VALIDATION EMAIL ----
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(req: Request) {
   try {
-    const ip = req.headers.get('x-forwarded-for') || 'unknown';
-    if (isRateLimited(ip)) {
-      return NextResponse.json(
-        { error: 'Trop de tentatives, réessayez plus tard.' },
-        { status: 429 }
-      );
-    }
-
     const body = await req.json();
     const { nom, telephone, email, message, recaptchaToken } = body;
 
