@@ -71,7 +71,7 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: `"www.coq-en-stock.com - Formulaire de contact" <${process.env.SMTP_USER}>`,
       to: process.env.EMAIL_TO,
-      replyTo: email,
+      replyTo: sanitizeHtml(email),
       subject: 'Nouveau message via le formulaire de contact',
       html: `
         <p><strong>Nom :</strong> ${sanitizeHtml(nom)}</p>
