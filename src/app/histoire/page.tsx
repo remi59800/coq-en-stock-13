@@ -40,8 +40,8 @@ export default function Histoire() {
                 className='w-full object-cover object-top aspect-[1/1]'
                 src='/photos/histoire-alex.JPG'
                 alt='Alex, spécialiste en rôtisserie, formé par un maître rôtisseur de la Bresse'
-                width={250}
-                height={250}
+                width={500}
+                height={500}
               />
               <h2 className='font-nunito text-center font-black pt-6 md:hidden'>
                 ALEX
@@ -53,8 +53,8 @@ export default function Histoire() {
                 className='w-full object-cover object-top aspect-[1/1]'
                 src='/photos/histoire-quentin.jpg'
                 alt='Quentin, boucher de formation, spécialiste des viandes et de la partie traiteur'
-                width={250}
-                height={250}
+                width={500}
+                height={500}
               />
               <h2 className='font-nunito text-center font-black pt-6 md:hidden'>
                 QUENTIN
@@ -89,8 +89,8 @@ export default function Histoire() {
               className='w-full h-auto object-cover object-center mm:max-h-[400px]'
               src='/photos/histoire-marseille.jpg'
               alt='Vue de Marseille'
-              width={600}
-              height={400}
+              width={1200}
+              height={800}
               loading='lazy'
             />
             <div className='flex flex-col items-center md:items-start px-8 md:px-0 pt-9 text-primary'>

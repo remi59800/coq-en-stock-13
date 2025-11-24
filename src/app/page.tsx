@@ -59,8 +59,8 @@ export default function Home() {
             className='pb-2 h-[300px] mm:h-[200px] object-cover w-full'
             src='/photos/accueil-1.jpg'
             alt='photo-rotisserie'
-            width={300}
-            height={150}
+            width={450}
+            height={250}
             priority
           />
           <div className='flex flex-row items-center'>
@@ -71,8 +71,8 @@ export default function Home() {
               className='py-2 w-[57px] h-[57px]'
               src='/icons/Logo-label-rouge.svg'
               alt='logo label rouge'
-              width={50}
-              height={15}
+              width={450}
+              height={250}
               priority
             />
           </div>
@@ -90,8 +90,8 @@ export default function Home() {
             className='pb-2 h-[300px] mm:h-[200px] object-cover object-top w-full'
             src='/photos/accueil-2.JPG'
             alt='photo-traiteur'
-            width={300}
-            height={150}
+            width={450}
+            height={250}
             priority
           />
           <h2 className='text-center py-4 font-black text-lg tracking-[3px]'>
@@ -132,8 +132,8 @@ export default function Home() {
               className='w-full h-auto object-cover'
               src='/photos/accueil-4.JPG'
               alt='photo-boutique'
-              width={600}
-              height={400}
+              width={800}
+              height={600}
             />
             <div className='flex flex-col items-center px-8 pt-7 pb-9 mm:pt-0 mm:pb-0 text-primary'>
               <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
