@@ -38,7 +38,7 @@ export default function Histoire() {
             <div className='flex flex-col md:relative'>
               <Image
                 className='w-full object-cover object-top aspect-[1/1]'
-                src='/photos/histoire-alex-v2.JPG'
+                src='/photos/histoire-alex-v1.JPG'
                 alt='Alex, spécialiste en rôtisserie, formé par un maître rôtisseur de la Bresse'
                 width={500}
                 height={500}
@@ -51,7 +51,7 @@ export default function Histoire() {
             <div className='flex flex-col md:relative'>
               <Image
                 className='w-full object-cover object-top aspect-[1/1]'
-                src='/photos/histoire-quentin-v2.jpg'
+                src='/photos/histoire-quentin-v1.jpg'
                 alt='Quentin, boucher de formation, spécialiste des viandes et de la partie traiteur'
                 width={500}
                 height={500}
@@ -87,7 +87,7 @@ export default function Histoire() {
           <div className='w-full mx-auto grid grid-cols-1 items-center'>
             <Image
               className='w-full h-auto object-cover object-center mm:max-h-[400px]'
-              src='/photos/histoire-marseille-v2.jpg'
+              src='/photos/histoire-marseille-v1.jpg'
               alt='Vue de Marseille'
               width={1200}
               height={800}
