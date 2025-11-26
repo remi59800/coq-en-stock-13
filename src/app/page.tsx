@@ -57,7 +57,7 @@ export default function Home() {
         <div className='flex flex-col items-center w-full'>
           <Image
             className='pb-2 h-[300px] mm:h-[200px] object-cover w-full'
-            src='/photos/accueil-1-v2.jpg'
+            src='/photos/accueil-1-v1.jpg'
             alt='photo-rotisserie'
             width={450}
             height={250}
@@ -88,7 +88,7 @@ export default function Home() {
         <div className='flex flex-col items-center w-full'>
           <Image
             className='pb-2 h-[300px] mm:h-[200px] object-cover object-top w-full'
-            src='/photos/accueil-2-v2.JPG'
+            src='/photos/accueil-2-v1.JPG'
             alt='photo-traiteur'
             width={450}
             height={250}
@@ -107,7 +107,7 @@ export default function Home() {
         <div className='flex flex-col items-center w-full'>
           <Image
             className='pb-2 h-[300px] mm:h-[200px] object-cover w-full'
-            src='/photos/accueil-3-v2.jpeg'
+            src='/photos/accueil-3-v1.jpeg'
             alt='photo-evenements'
             width={300}
             height={150}
@@ -130,7 +130,7 @@ export default function Home() {
           <div className='w-full mx-auto grid grid-cols-1 mm:grid-cols-2 items-center'>
             <Image
               className='w-full h-auto object-cover'
-              src='/photos/accueil-4-v2.JPG'
+              src='/photos/accueil-4-v1.JPG'
               alt='photo-boutique'
               width={800}
               height={600}
