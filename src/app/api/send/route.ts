@@ -69,13 +69,16 @@ export async function POST(req: Request) {
 
     // 5. Construction du mail
     const mailOptions = {
-      from: `"www.coq-en-stock.com - Formulaire de contact" <${process.env.SMTP_USER}>`,
+      from: `"www.coq-en-stock.com" <${process.env.SMTP_USER}>`,
       to: process.env.EMAIL_TO,
       replyTo: sanitizeHtml(email),
-      subject: 'Nouveau message via le formulaire de contact',
+      subject: `${sanitizeHtml(
+        nom
+      )} vous a envoyé un message via le formulaire de contact`,
       html: `
-        <p><strong>Nom :</strong> ${sanitizeHtml(nom)}</p>
-        <p><strong>Email :</strong> ${sanitizeHtml(email)}</p>
+        <p><strong>Nom :</strong> ${sanitizeHtml(
+          nom
+        )} — <strong>Email :</strong> ${sanitizeHtml(email)}</p>
         <p><strong>Téléphone :</strong> ${sanitizeHtml(
           telephone || 'Non renseigné'
         )}</p>
