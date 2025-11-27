@@ -114,7 +114,7 @@ export default function FormSendEmail() {
           </h2>
 
           <label htmlFor='nom' className='font-nunito'>
-            Nom et prénom*
+            Prénom et nom*
           </label>
           <input
             type='text'
@@ -123,7 +123,7 @@ export default function FormSendEmail() {
             value={formData.nom}
             onChange={handleChange}
             maxLength={50}
-            placeholder='Entrez votre nom et prénom'
+            placeholder='Entrez votre prénom et nom'
             className={getInputClass('nom')}
           />
         </div>
