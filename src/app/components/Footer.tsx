@@ -84,7 +84,10 @@ export default function Footer() {
           </div>
         </div>
         <p className='text-xs text-center font-nunito'>
-          © 2025 - Rémi Ménart - Creative developer - remimenart@gmail.com
+          © 2025 - Rémi Ménart - Creative developer -{' '}
+          <a href='mailto:remimenart@gmail.com' className='text-xs font-nunito'>
+            remimenart@gmail.com
+          </a>
         </p>
       </div>
     </footer>
