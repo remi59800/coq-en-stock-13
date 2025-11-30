@@ -36,7 +36,7 @@ export default function Home() {
           </p>
 
           <Link
-            href={'/menu'}
+            href={'/notre-carte'}
             className='mt-6 font-nunito text-sm border border-primary px-4 py-2'
           >
             <div className='flex flex-row items-center'>
