@@ -58,7 +58,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ open, setOpen }) => {
         </Link>
 
         <Link
-          href='/histoire'
+          href='/qui-sommes-nous-'
           onClick={handleClose}
           className='font-nunito text-xl uppercase py-4 font-bold tracking-widest text-[#0d0c1d] no-underline hover:text-[#343078] hover:font-extrabold transition-colors duration-300 sm:text-xl'
         >
@@ -66,7 +66,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ open, setOpen }) => {
         </Link>
 
         <Link
-          href='/menu'
+          href='/notre-carte'
           onClick={handleClose}
           className='font-nunito text-xl uppercase py-4 font-bold tracking-widest text-[#0d0c1d] no-underline hover:text-[#343078] hover:font-extrabold transition-colors duration-300 sm:text-xl'
         >
