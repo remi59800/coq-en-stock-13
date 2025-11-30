@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -103,7 +103,6 @@ export default function FormSendEmail() {
 
   return (
     <>
-      <ToastContainer position='top-right' />
       <form
         onSubmit={handleSubmit}
         className='w-full p-8 bg-green mx-auto flex flex-col gap-4 font-poppins text-sm'
