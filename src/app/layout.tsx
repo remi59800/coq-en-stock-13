@@ -55,9 +55,6 @@ export const metadata: Metadata = {
       'Coq en Stock vous offre une gamme complète de produits de qualité supérieure, avec des viandes labelisées et Label Rouge à Marseille.',
     images: ['https://www.coq-en-stock.com/logo-coq-en-stock.jpeg'],
   },
-  verification: {
-    google: 'yD3eglTfRwpGMLOgUrXsHzUHuCRSoPKOUyiDp0leQFI',
-  },
 };
 
 export default function RootLayout({
