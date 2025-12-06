@@ -22,25 +22,25 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Rôtisserie - Boucher - traiteur | Marseille (13) | Coq en Stock',
+  title: 'Coq en stock : Rôtisserie & traiteur | Marseille',
   description:
     'Coq en Stock - rôtisserie, boucher & traiteur à Marseille. Poulet Label Rouge, plats gourmands et épicerie fine. Commandez dès maintenant !',
   icons: {
     icon: '/icons/chicken-CES.svg',
   },
-  metadataBase: new URL('https://www.coq-en-stock.com'),
+  metadataBase: new URL('https://www.coqenstock.com'),
   alternates: {
-    canonical: 'https://www.coq-en-stock.com/',
+    canonical: 'https://www.coqenstock.com/',
   },
   openGraph: {
     title: 'Rôtisserie - Boucher - traiteur | Marseille (13) | Coq en Stock',
     description:
       'Coq en Stock - rôtisserie, boucher & traiteur à Marseille.  Poulet Label Rouge, plats gourmands et épicerie fine. Commandez dès maintenant !',
-    url: 'https://www.coq-en-stock.com',
+    url: 'https://www.coqenstock.com',
     siteName: 'Coq en Stock',
     images: [
       {
-        url: 'https://www.coq-en-stock.com/logo-coq-en-stock.jpeg',
+        url: 'https://www.coqenstock.com/logo-coq-en-stock.jpeg',
         width: 800,
         height: 600,
         alt: 'Coq en Stock - Rôtisserie et Marseille',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: 'Rôtisserie - Boucher - traiteur | Marseille (13) | Coq en Stock',
     description:
       'Coq en Stock - rôtisserie, boucher & traiteur à Marseille. Poulet Label Rouge, plats gourmands et épicerie fine. Commandez dès maintenant !',
-    images: ['https://www.coq-en-stock.com/logo-coq-en-stock.jpeg'],
+    images: ['https://www.coqenstock.com/logo-coq-en-stock.jpeg'],
   },
 };
 
