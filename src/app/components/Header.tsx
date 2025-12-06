@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 const links = [
   { href: '/', label: 'ACCUEIL' },
-  { href: '/qui-sommes-nous-', label: 'NOTRE HISTOIRE' },
+  { href: '/qui-sommes-nous', label: 'NOTRE HISTOIRE' },
   { href: '/notre-carte', label: 'MENU' },
   { href: '/contact', label: 'CONTACT' },
 ];
