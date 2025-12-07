@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: 'Coq en Stock',
     images: [
       {
-        url: 'https://www.coqenstock.com/logo-coq-en-stock.jpeg',
+        url: 'https://www.coqenstock.com/logo-coqenstock.jpg',
         width: 800,
         height: 600,
         alt: 'Coq en Stock - Rôtisserie et Marseille',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: 'Rôtisserie - Boucher - traiteur | Marseille (13) | Coq en Stock',
     description:
       'Coq en Stock - rôtisserie, boucher & traiteur à Marseille. Poulet Label Rouge, plats gourmands et épicerie fine. Commandez dès maintenant !',
-    images: ['https://www.coqenstock.com/logo-coq-en-stock.jpeg'],
+    images: ['https://www.coqenstock.com/logo-coqenstock.jpg'],
   },
 };
 
