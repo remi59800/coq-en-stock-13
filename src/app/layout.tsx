@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import TransitionLayout from './components/TransitionLayout';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Analytics } from '@vercel/analytics/next';
 
 const nunito = Nunito({
   variable: '--font-nunito',
@@ -71,6 +72,7 @@ export default function RootLayout({
         <TransitionLayout>{children}</TransitionLayout>
         <Footer />
         <ToastContainer position='top-right' />
+        <Analytics />
       </body>
     </html>
   );
