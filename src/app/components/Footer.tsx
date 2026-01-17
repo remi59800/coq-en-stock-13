@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import SocialIcon from './SocialIcon';
 
 export default function Footer() {
   return (
@@ -54,32 +55,16 @@ export default function Footer() {
           <div className='hidden md:block md:flex md:items-center md:flex-col md:pb-6 md:items-start md:whitespace-nowrap'>
             <h2 className='font-black pb-4 tracking-[2px]'>Réseaux sociaux</h2>
             <div className='flex items-center space-x-3'>
-              <a
+              <SocialIcon
                 href='https://www.facebook.com/profile.php?id=100090150523696'
-                aria-label='Facebook'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <Image
-                  src='/icons/Facebook-blanc.svg'
-                  alt='Facebook'
-                  width={30}
-                  height={30}
-                />
-              </a>
-              <a
+                src='/icons/Facebook-blanc.svg'
+                alt='Facebook'
+              />
+              <SocialIcon
                 href='https://www.instagram.com/coqenstock_marseille/'
-                aria-label='Instagram'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <Image
-                  src='/icons/Instagram-blanc.svg'
-                  alt='Instagram'
-                  width={30}
-                  height={30}
-                />
-              </a>
+                src='/icons/Instagram-blanc.svg'
+                alt='Instagram'
+              />
             </div>
           </div>
         </div>

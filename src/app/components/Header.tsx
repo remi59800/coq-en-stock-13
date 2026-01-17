@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import Burger from './Burger';
 import BurgerMenu from './BurgerMenu';
 import { useState } from 'react';
+import SocialIcon from './SocialIcon';
 
 const links = [
   { href: '/', label: 'ACCUEIL' },
@@ -35,8 +36,10 @@ export default function Header() {
             <Link
               key={href}
               href={href}
-              className={`font-nunito text-sm text-primary whitespace-nowrap ${
-                pathname === href ? 'font-black' : ''
+              className={`font-nunito text-sm text-primary whitespace-nowrap transition-opacity duration-300 ${
+                pathname === href
+                  ? 'font-black'
+                  : 'opacity-70 hover:opacity-100'
               }`}
             >
               {label}
@@ -45,32 +48,16 @@ export default function Header() {
         </nav>
 
         <div className='hidden sm:flex w-1/4 justify-end space-x-2'>
-          <a
+          <SocialIcon
             href='https://www.facebook.com/profile.php?id=100090150523696'
-            aria-label='Facebook'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/icons/Facebook.svg'
-              alt='Facebook'
-              width={30}
-              height={30}
-            />
-          </a>
-          <a
+            src='/icons/Facebook.svg'
+            alt='Facebook'
+          />
+          <SocialIcon
             href='https://www.instagram.com/coqenstock_marseille/'
-            aria-label='Instagram'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/icons/Instagram.svg'
-              alt='Instagram'
-              width={30}
-              height={30}
-            />
-          </a>
+            src='/icons/Instagram.svg'
+            alt='Instagram'
+          />
         </div>
         <Burger open={open} setOpen={setOpen} />
       </header>
