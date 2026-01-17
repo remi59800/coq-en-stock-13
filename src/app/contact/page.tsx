@@ -1,3 +1,4 @@
+import FadeIn from '../components/FadeIn';
 import FormSendEmail from '../components/FormSendEmail';
 import Map from '../components/Map';
 
@@ -42,31 +43,34 @@ export default function Contact() {
       </div>
 
       <div className='flex flex-col items-center text-primary max-w-3xl mx-auto px-8'>
-        <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
-          POINT DE REPÈRES À PROXIMITÉ
-        </h2>
-        <p className='text-center text-sm font-nunito pb-5'>
-          Station de métro le plus proche : <strong> Joliette</strong> <br></br>
-          Stations de tramway les plus proches :
-          <strong> République dames - Joliette</strong>
-          <br></br>
-          Stations de vélo les plus proche :
-          <strong> République moisson - Dames-Schumann</strong>
-          <br></br>
-          Parkings les plus proches :
-          <strong> Q-Park Joliette - Q-Park Phocéens</strong>
-        </p>
-        <p className='text-[0.75rem] leading-normal font-nunito text-center mx-auto mb-9'>
-          Ce site est protégé par reCAPTCHA et la{' '}
-          <a href='https://policies.google.com/privacy' className='underline'>
-            Politique de confidentialité
-          </a>{' '}
-          et les{' '}
-          <a href='https://policies.google.com/terms' className='underline'>
-            Conditions d&apos;utilisation
-          </a>{' '}
-          de Google s’appliquent.
-        </p>
+        <FadeIn duration={0.8} delay={0.3}>
+          <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
+            POINT DE REPÈRES À PROXIMITÉ
+          </h2>
+          <p className='text-center text-sm font-nunito pb-5'>
+            Station de métro le plus proche : <strong> Joliette</strong>{' '}
+            <br></br>
+            Stations de tramway les plus proches :
+            <strong> République dames - Joliette</strong>
+            <br></br>
+            Stations de vélo les plus proche :
+            <strong> République moisson - Dames-Schumann</strong>
+            <br></br>
+            Parkings les plus proches :
+            <strong> Q-Park Joliette - Q-Park Phocéens</strong>
+          </p>
+          <p className='text-[0.75rem] leading-normal font-nunito text-center mx-auto mb-9'>
+            Ce site est protégé par reCAPTCHA et la{' '}
+            <a href='https://policies.google.com/privacy' className='underline'>
+              Politique de confidentialité
+            </a>{' '}
+            et les{' '}
+            <a href='https://policies.google.com/terms' className='underline'>
+              Conditions d&apos;utilisation
+            </a>{' '}
+            de Google s’appliquent.
+          </p>
+        </FadeIn>
       </div>
     </div>
   );

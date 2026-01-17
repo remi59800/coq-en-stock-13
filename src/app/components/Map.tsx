@@ -1,6 +1,8 @@
+import FadeIn from './FadeIn';
+
 export default function Map() {
   return (
-    <div className='w-full h-full'>
+    <FadeIn duration={1} delay={0.1} className='w-full h-full'>
       <iframe
         style={{ border: 0, minHeight: '400px' }}
         title='Carte de la boutique Coq en Stock'
@@ -10,6 +12,6 @@ export default function Map() {
         loading='eager'
         referrerPolicy='no-referrer-when-downgrade'
       ></iframe>
-    </div>
+    </FadeIn>
   );
 }
