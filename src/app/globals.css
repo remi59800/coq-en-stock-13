@@ -25,3 +25,23 @@ body {
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+@keyframes peck {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+}
+
+.animate-picorage {
+  display: inline-block;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+}
+
+.group:hover .animate-picorage {
+  animation: peck 0.5s infinite ease-in-out;
+}
