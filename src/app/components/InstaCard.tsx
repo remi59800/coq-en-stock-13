@@ -9,7 +9,7 @@ interface InstaCardProps {
 }
 
 export default function InstaCard({ num, className = '' }: InstaCardProps) {
-  const imgSrc = `/photos/accueil-insta-${num}${'.JPG'}`;
+  const imgSrc = `/photos/accueil-instagram-${num}${'.JPG'}`;
 
   return (
     <motion.a
