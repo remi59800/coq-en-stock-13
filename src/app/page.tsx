@@ -118,36 +118,33 @@ export default function Home() {
         </FadeIn>
       </div>
 
-      <div className='bg-green w-full'>
-        <FadeIn duration={1} delay={0.2}>
-          <div className='w-full max-w-5xl mx-auto transition-all duration-180 ease-in-out flex flex-col mm:flex-row items-center lg:pl-8'>
-            <div className='w-full mx-auto grid grid-cols-1 mm:grid-cols-2 items-center'>
-              <Image
-                className='w-full h-auto object-cover'
-                src='/photos/accueil-4-v1.JPG'
-                alt='photo-boutique'
-                width={800}
-                height={600}
-              />
-              <div className='flex flex-col items-center px-8 pt-7 pb-9 mm:pt-0 mm:pb-0 text-primary'>
-                <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
-                  LA BOUTIQUE
-                </h2>
-                <p className='text-center text-sm font-nunito'>
-                  Venez nous rendre visite à Marseille, au cœur du quartier de
-                  la Joliette, dans notre boutique aux inspirations
-                  Méditerranéennes.
-                  <br />
-                  <br />
-                  Découvrez nos espaces dédiés : rôtisserie, espace traiteur,
-                  cave à vins et épicerie fine. Une immersion gourmande, où
-                  chaque coin révèle une facette de la Méditerranée !
-                </p>
-              </div>
+      <FadeIn duration={1} delay={0.2}>
+        <div className='bg-green w-full max-w-5xl mx-auto transition-all duration-180 ease-in-out flex flex-col mm:flex-row items-center'>
+          <div className='w-full mx-auto grid grid-cols-1 mm:grid-cols-2 items-center'>
+            <Image
+              className='w-full h-auto object-cover'
+              src='/photos/accueil-4-v1.JPG'
+              alt='photo-boutique'
+              width={800}
+              height={600}
+            />
+            <div className='flex flex-col items-center px-8 pt-7 pb-9 mm:pt-0 mm:pb-0 text-primary'>
+              <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
+                LA BOUTIQUE
+              </h2>
+              <p className='text-center text-sm font-nunito'>
+                Venez nous rendre visite à Marseille, au cœur du quartier de la
+                Joliette, dans notre boutique aux inspirations Méditerranéennes.
+                <br />
+                <br />
+                Découvrez nos espaces dédiés : rôtisserie, espace traiteur, cave
+                à vins et épicerie fine. Une immersion gourmande, où chaque coin
+                révèle une facette de la Méditerranée !
+              </p>
             </div>
           </div>
-        </FadeIn>
-      </div>
+        </div>
+      </FadeIn>
 
       <div className='py-9 max-w-4xl'>
         <FadeIn duration={0.8} delay={0.3}>
