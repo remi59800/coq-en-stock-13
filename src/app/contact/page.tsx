@@ -20,8 +20,8 @@ export default function Contact() {
         <p className='text-center text-sm font-nunito pb-2'>
           Vous pouvez également nous écrire via le formulaire ci-dessous ou à
           l’adresse{' '}
-          <a href='mailto:coqenstock13@gmail.com' className='font-bold'>
-            coqenstock13@gmail.com
+          <a href='mailto:coqenstock13&#64;gmail&#46;com' className='font-bold'>
+            coqenstock13&#64;gmail&#46;com
           </a>{' '}
           pour toute question ou demande de devis. Nous vous répondrons
           rapidement avec toutes les informations nécessaires.
