@@ -26,10 +26,10 @@ export default function Footer() {
               04 91 91 18 40
             </a>
             <a
-              href='mailto:coqenstock13@gmail.com'
+              href='mailto:coqenstock13&#64;gmail&#46;com'
               className='text-sm font-nunito'
             >
-              coqenstock13@gmail.com
+              coqenstock13&#64;gmail&#46;com
             </a>
           </div>
 
@@ -70,8 +70,11 @@ export default function Footer() {
         </div>
         <p className='text-xs text-center font-nunito'>
           © 2025 - Rémi Ménart - Creative developer -{' '}
-          <a href='mailto:remimenart@gmail.com' className='text-xs font-nunito'>
-            remimenart@gmail.com
+          <a
+            href='mailto:remimenart&#64;gmail&#46;com'
+            className='text-xs font-nunito'
+          >
+            remimenart&#64;gmail&#46;com
           </a>
         </p>
       </div>

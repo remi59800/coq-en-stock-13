@@ -2,15 +2,14 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import sanitizeHtml from 'sanitize-html';
 
-// ---- VALIDATION EMAIL ----
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneRegex = /^[\d\s+()-]{10,20}$/;
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { nom, telephone, email, message, recaptchaToken } = body;
 
-    // 1. Validation basique
     if (!nom || !email || !message || !recaptchaToken) {
       return NextResponse.json(
         { error: 'Champs requis manquants.' },
@@ -21,6 +20,13 @@ export async function POST(req: Request) {
     if (!emailRegex.test(email)) {
       return NextResponse.json(
         { error: 'Adresse email invalide.' },
+        { status: 400 }
+      );
+    }
+
+    if (telephone && telephone.trim() && !phoneRegex.test(telephone)) {
+      return NextResponse.json(
+        { error: 'Numéro de téléphone invalide.' },
         { status: 400 }
       );
     }
@@ -50,9 +56,20 @@ export async function POST(req: Request) {
       );
     }
 
-    // 3. Sanitisation du message
+    const cleanNom = sanitizeHtml(nom, {
+      allowedTags: [],
+      allowedAttributes: {},
+    });
+    const cleanEmail = sanitizeHtml(email, {
+      allowedTags: [],
+      allowedAttributes: {},
+    });
+    const cleanTelephone = sanitizeHtml(telephone || '', {
+      allowedTags: [],
+      allowedAttributes: {},
+    });
     const cleanMessage = sanitizeHtml(message, {
-      allowedTags: [], // aucun tag HTML autorisé
+      allowedTags: [],
       allowedAttributes: {},
     });
 
@@ -60,7 +77,7 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: parseInt(process.env.SMTP_PORT || '587'),
-      secure: process.env.SMTP_PORT === '465', // TLS si port 465
+      secure: process.env.SMTP_PORT === '465',
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -71,17 +88,11 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: `"www.coq-en-stock.com" <${process.env.SMTP_USER}>`,
       to: process.env.EMAIL_TO,
-      replyTo: sanitizeHtml(email),
-      subject: `${sanitizeHtml(
-        nom
-      )} vous a envoyé un message via le formulaire de contact`,
+      replyTo: cleanEmail,
+      subject: `${cleanNom} vous a envoyé un message via le formulaire de contact`,
       html: `
-        <p><strong>Nom :</strong> ${sanitizeHtml(
-          nom
-        )} — <strong>Email :</strong> ${sanitizeHtml(email)}</p>
-        <p><strong>Téléphone :</strong> ${sanitizeHtml(
-          telephone || 'Non renseigné'
-        )}</p>
+        <p><strong>Nom :</strong> ${cleanNom} — <strong>Email :</strong> ${cleanEmail}</p>
+        <p><strong>Téléphone :</strong> ${cleanTelephone || 'Non renseigné'}</p>
         <p><strong>Message :</strong></p>
         <p>${cleanMessage.replace(/\n/g, '<br>')}</p>
       `,
@@ -92,9 +103,9 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('Erreur lors de l’envoi :', error);
+    console.error("Erreur lors de l'envoi :", error);
     return NextResponse.json(
-      { error: 'Erreur lors de l’envoi de l’email.' },
+      { error: "Erreur lors de l'envoi de l'email." },
       { status: 500 }
     );
   }
