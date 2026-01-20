@@ -45,15 +45,15 @@ export default function Contact() {
       <div className='flex flex-col items-center text-primary max-w-3xl mx-auto px-8'>
         <FadeIn duration={0.8} delay={0.3}>
           <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
-            POINT DE REPÈRES À PROXIMITÉ
+            POINTS DE REPÈRES À PROXIMITÉ
           </h2>
           <p className='text-center text-sm font-nunito pb-5'>
-            Station de métro le plus proche : <strong> Joliette</strong>{' '}
+            Station de métro la plus proche : <strong> Joliette</strong>{' '}
             <br></br>
             Stations de tramway les plus proches :
             <strong> République dames - Joliette</strong>
             <br></br>
-            Stations de vélo les plus proche :
+            Stations de vélo les plus proches :
             <strong> République moisson - Dames-Schumann</strong>
             <br></br>
             Parkings les plus proches :

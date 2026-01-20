@@ -176,12 +176,6 @@ export default function FormSendEmail() {
               />
             </div>
 
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
-              size='invisible'
-            />
-
             <div className='flex items-center gap-4 max-w-[400px] mx-auto text-xs'>
               <input type='checkbox' id='consentement' required />
               <label htmlFor='consentement' className='font-nunito'>
@@ -221,6 +215,14 @@ export default function FormSendEmail() {
           </div>
         </FadeIn>
       </form>
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
+        size='invisible'
+        badge='bottomright'
+        theme='light'
+        type='image'
+      />
     </>
   );
 }
