@@ -45,3 +45,7 @@ body {
 .group:hover .animate-picorage {
   animation: peck 0.5s infinite ease-in-out;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
