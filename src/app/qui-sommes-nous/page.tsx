@@ -4,7 +4,7 @@ import FadeIn from '../components/FadeIn';
 export default function Histoire() {
   return (
     <>
-      <div className='relative w-full bg-green flex md:max-h-[450px]'>
+      <div className='relative w-full bg-green flex md:max-h-[400px]'>
         <div className='absolute w-full h-full flex items-center justify-between'>
           <Image
             className='absolute right-[0] opacity-10 h-[80%] max-h-56 w-auto'
@@ -35,16 +35,18 @@ export default function Histoire() {
             boutique et laisser s’exprimer notre passion... Quoi de mieux que
             Marseille ?
           </p>
-          <div className='grid grid-cols-2 gap-6 md:gap-8 px-2 items-start justify-items-center'>
+          <div className='grid grid-cols-2 gap-6 md:gap-8 items-start justify-items-center'>
             <FadeIn direction='up' delay={0.1}>
               <div className='flex flex-col md:relative'>
-                <Image
-                  className='w-full object-cover object-top aspect-[1/1]'
-                  src='/photos/histoire-alex-v1.JPG'
-                  alt='Alex, spécialiste en rôtisserie, formé par un maître rôtisseur de la Bresse'
-                  width={500}
-                  height={500}
-                />
+                <div className='max-w-[280px]'>
+                  <Image
+                    className='w-full object-cover object-top aspect-[1/1]'
+                    src='/photos/histoire-alex-v1.JPG'
+                    alt='Alex, spécialiste en rôtisserie, formé par un maître rôtisseur de la Bresse'
+                    width={500}
+                    height={500}
+                  />
+                </div>
                 <h2 className='font-nunito text-center font-black pt-6 md:hidden'>
                   ALEX
                 </h2>
@@ -53,13 +55,15 @@ export default function Histoire() {
 
             <FadeIn direction='up' delay={0.1}>
               <div className='flex flex-col md:relative'>
-                <Image
-                  className='w-full object-cover object-top aspect-[1/1]'
-                  src='/photos/histoire-quentin-v1.jpg'
-                  alt='Quentin, boucher de formation, spécialiste des viandes et de la partie traiteur'
-                  width={500}
-                  height={500}
-                />
+                <div className='max-w-[280px]'>
+                  <Image
+                    className='w-full object-cover object-top aspect-[1/1]'
+                    src='/photos/histoire-quentin-v1.jpg'
+                    alt='Quentin, boucher de formation, spécialiste des viandes et de la partie traiteur'
+                    width={500}
+                    height={500}
+                  />
+                </div>
                 <h2 className='font-nunito text-center font-black pt-6 md:hidden'>
                   QUENTIN
                 </h2>
@@ -70,7 +74,7 @@ export default function Histoire() {
       </div>
       <div className='w-full'>
         <FadeIn duration={1} delay={0.1}>
-          <div className='hidden md:flex md:justify-center md:gap-8 max-w-2xl mx-auto py-8 mt-9'>
+          <div className='hidden md:flex md:justify-center max-w-2xl mx-auto py-8 mt-10'>
             <div className='flex flex-col items-center w-full max-w-[320px]'>
               <h2 className='font-nunito text-center font-black pb-4'>ALEX</h2>
               <p className='text-center text-sm font-nunito'>
