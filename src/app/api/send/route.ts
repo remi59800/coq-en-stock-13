@@ -86,7 +86,7 @@ export async function POST(req: Request) {
 
     // 5. Construction du mail
     const mailOptions = {
-      from: `"www.coq-en-stock.com" <${process.env.SMTP_USER}>`,
+      from: `"www.coqenstock.com" <${process.env.SMTP_USER}>`,
       to: process.env.EMAIL_TO,
       replyTo: cleanEmail,
       subject: `${cleanNom} vous a envoyé un message via le formulaire de contact`,
