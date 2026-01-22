@@ -75,7 +75,7 @@ export default function Histoire() {
       <div className='w-full'>
         <FadeIn duration={1} delay={0.1}>
           <div className='hidden md:flex md:justify-center max-w-2xl mx-auto py-8 mt-10'>
-            <div className='flex flex-col items-center w-full max-w-[320px]'>
+            <div className='flex flex-col items-center w-full max-w-[280px] pr-6'>
               <h2 className='font-nunito text-center font-black pb-4'>ALEX</h2>
               <p className='text-center text-sm font-nunito'>
                 Formé par un maître rôtisseur de la Bresse, je m&apos;occupe de
@@ -83,7 +83,7 @@ export default function Histoire() {
               </p>
             </div>
 
-            <div className='flex flex-col items-center w-full max-w-[320px]'>
+            <div className='flex flex-col items-center w-full max-w-[280px] pl-6'>
               <h2 className='font-nunito text-center font-black pb-4'>
                 QUENTIN
               </h2>
