@@ -6,7 +6,7 @@ import ChickenButton from './components/ChickenButton';
 export default function Home() {
   return (
     <div className='flex flex-col items-center mx-auto w-full overflow-hidden'>
-      <div className='relative w-full bg-green py-9 flex items-center'>
+      <div className='relative w-full max-w-5xl bg-green py-9 flex items-center'>
         <Image
           className='absolute left-[0] opacity-10 h-[80%] w-auto hidden sm:block'
           src='/coq-bg-left.png'
@@ -24,9 +24,12 @@ export default function Home() {
           priority
         />
         <div className='flex flex-col items-center px-8 text-primary max-w-3xl mx-auto relative'>
-          <h1 className='text-center pb-4 font-black text-lg tracking-[3px]'>
-            L’AMOUR DU POULET ET DE LA CUISINE
-          </h1>
+          <FadeIn direction='down'>
+            <h1 className='text-xl sm:text-lg font-black uppercase relative inline-block text-center pb-4 tracking-[2px]'>
+              {' '}
+              L&apos;AMOUR DU POULET ET DE LA CUISINE{' '}
+            </h1>
+          </FadeIn>
           <p className='text-center text-sm font-nunito'>
             Vous aimez titiller vos papilles avec de bons produits locaux ? Chez
             Coq en Stock, vous trouverez tout ce dont vous avez besoin pour vous
@@ -52,7 +55,7 @@ export default function Home() {
               priority
             />
             <div className='flex flex-row items-center'>
-              <h2 className='text-center py-4 font-black text-lg tracking-[3px] pr-2'>
+              <h2 className='text-center py-4 font-black text-lg tracking-[2px] pr-2'>
                 RÔTISSERIE
               </h2>
               <Image
@@ -84,7 +87,7 @@ export default function Home() {
               height={250}
               priority
             />
-            <h2 className='text-center py-4 font-black text-lg tracking-[3px]'>
+            <h2 className='text-center py-4 font-black text-lg tracking-[2px]'>
               TRAITEUR
             </h2>
             <p className='text-center text-sm font-nunito'>
@@ -105,7 +108,7 @@ export default function Home() {
               height={150}
               priority
             />
-            <h2 className='text-center py-4 font-black text-lg tracking-[3px]'>
+            <h2 className='text-center py-4 font-black text-lg tracking-[2px]'>
               ÉVÉNEMENTS
             </h2>
             <p className='text-center text-sm font-nunito'>
@@ -129,7 +132,7 @@ export default function Home() {
               height={600}
             />
             <div className='flex flex-col items-center px-8 pt-7 pb-9 mm:pt-0 mm:pb-0 text-primary'>
-              <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
+              <h2 className='text-center pb-4 font-black text-lg tracking-[2px]'>
                 LA BOUTIQUE
               </h2>
               <p className='text-center text-sm font-nunito'>
@@ -156,7 +159,7 @@ export default function Home() {
               rel='noopener noreferrer'
               className='flex justify-center'
             >
-              <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
+              <h2 className='text-center pb-4 font-black text-lg tracking-[2px]'>
                 SUIVEZ-NOUS @COQENSTOCK_MARSEILLE
               </h2>
             </a>

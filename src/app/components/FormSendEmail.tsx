@@ -108,7 +108,7 @@ export default function FormSendEmail() {
         <FadeIn direction='up' delay={0.1}>
           <div className='flex flex-col font-poppins gap-4 text-sm'>
             <div className='flex flex-col w-full max-w-[400px] mx-auto'>
-              <h2 className='text-center pb-4 font-black text-lg tracking-[3px]'>
+              <h2 className='text-center pb-4 font-black text-lg tracking-[2px]'>
                 ENVOYER UN E-MAIL
               </h2>
 
