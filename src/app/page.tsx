@@ -27,7 +27,7 @@ export default function Home() {
           <FadeIn direction='down'>
             <h1 className='text-xl sm:text-lg font-black uppercase relative inline-block text-center pb-4 tracking-[2px]'>
               {' '}
-              L'AMOUR DU POULET ET DE LA CUISINE{' '}
+              L&apos;AMOUR DU POULET ET DE LA CUISINE{' '}
             </h1>
           </FadeIn>
           <p className='text-center text-sm font-nunito'>
