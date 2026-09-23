@@ -94,11 +94,11 @@ export default function Histoire() {
                   LE CHOIX DE LA JOLIETTE
                 </h2>
                 <p className='text-center text-sm font-nunito'>
-                  Nous souhaitions participer au renouveau de ce si beau
-                  boulevard Haussmannien : la bonne humeur légendaire des
-                  nordistes et de bons petits plats nous ont semblé les
-                  ingrédients parfaits pour lui insuffler une nouvelle
-                  dynamique.
+                  Nous souhaitions participer au renouveau du quartier de la
+                  Joliette et ce si beau boulevard Haussmannien, rue de la
+                  République : la bonne humeur légendaire des nordistes et de
+                  bons petits plats nous ont semblé les ingrédients parfaits
+                  pour lui insuffler une nouvelle dynamique.
                 </p>
               </div>
             </div>
