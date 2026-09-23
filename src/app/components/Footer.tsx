@@ -77,6 +77,17 @@ export default function Footer() {
             remimenart&#64;gmail&#46;com
           </a>
         </p>
+        <p className='text-[0.5rem] leading-normal font-nunito text-center mx-auto mt-2'>
+          Ce site est protégé par reCAPTCHA et la{' '}
+          <a href='https://policies.google.com/privacy' className='underline'>
+            Politique de confidentialité
+          </a>{' '}
+          et les{' '}
+          <a href='https://policies.google.com/terms' className='underline'>
+            Conditions d’utilisation
+          </a>{' '}
+          de Google s’appliquent.
+        </p>
       </div>
     </footer>
   );
