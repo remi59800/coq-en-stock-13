@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import FadeIn from '../components/FadeIn';
-import ChickenButton from '../components/ChickenButton';
 
 export default function Histoire() {
   return (
@@ -10,7 +9,7 @@ export default function Histoire() {
         <FadeIn direction='down'>
           <div className='text-center mb-10 relative'>
             <h1 className='text-xl sm:text-lg font-black uppercase relative inline-block tracking-[2px]'>
-              DEUX CH'TIS À MARSEILLE
+              DEUX CH&apos;TIS À MARSEILLE
               <span className='absolute -bottom-3 left-1/2 -translate-x-1/2 w-12 h-1 bg-green' />
             </h1>
           </div>
