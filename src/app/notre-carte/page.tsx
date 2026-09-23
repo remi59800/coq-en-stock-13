@@ -26,9 +26,9 @@ export default function Menu() {
                   Rôtisserie
                 </h2>
                 <Image
-                  className='max-h-56 w-auto relative -top-1'
-                  src='/icons/fried-chicken.png'
-                  alt='coq-background-right'
+                  className='max-h-56 w-auto relative -top-2'
+                  src='/icons/roast-chicken.png'
+                  alt='icon-roast-chicken'
                   width={35}
                   height={35}
                   priority
@@ -95,7 +95,7 @@ export default function Menu() {
                 <Image
                   className='max-h-56 w-auto relative -top-3'
                   src='/icons/healthy-food.png'
-                  alt='coq-background-right'
+                  alt='icon-formules'
                   width={35}
                   height={35}
                   priority
