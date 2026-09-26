@@ -26,11 +26,11 @@ export default function Menu() {
                   Rôtisserie
                 </h2>
                 <Image
-                  className='max-h-56 w-auto relative -top-2'
+                  className='relative -top-2'
                   src='/icons/roast-chicken.png'
                   alt='icon-roast-chicken'
-                  width={35}
-                  height={35}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
