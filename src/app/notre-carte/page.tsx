@@ -93,11 +93,11 @@ export default function Menu() {
                   Formules Midi
                 </h2>
                 <Image
-                  className='max-h-56 w-auto relative -top-3'
+                  className='relative -top-3'
                   src='/icons/healthy-food.png'
                   alt='icon-formules'
-                  width={35}
-                  height={35}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
