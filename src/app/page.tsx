@@ -80,8 +80,8 @@ export default function Home() {
         <FadeIn direction='up' delay={0.1}>
           <div className='flex flex-col items-center w-full'>
             <Image
-              className='pb-2 h-[300px] mm:h-[200px] object-cover object-bottom w-full'
-              src='/photos/accueil-traiteur.png'
+              className='pb-2 h-[300px] mm:h-[200px] object-cover object-center w-full'
+              src='/photos/accueil-traiteur-2.png'
               alt='photo-traiteur'
               width={450}
               height={250}
